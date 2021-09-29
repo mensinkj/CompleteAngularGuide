@@ -1,0 +1,10 @@
+<h3>Register User</h3>
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="userName">
+<p>{{ userName }}</p>
+<button
+  class="btn btn-danger"
+  [disabled]="!userName"
+  (click)="resetUserName()">Reset</button>
